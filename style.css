@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  max-width: 1440px;
+  min-height: 100vh;
+  background: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-color: #0c122c;
+}
+
+body .attribution {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+body .attribution a {
+  color: #848794;
+  text-decoration: none;
+  -webkit-transition: color 200ms ease-out;
+  transition: color 200ms ease-out;
+}
+
+body .attribution a:hover {
+  color: #3b3d44;
+}
+
+body main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .container {
+  background: #1d2c67;
+  margin: 0 1rem;
+}
+
+.container-1 {
+  height: 200px;
+  width: 375px;
+  padding: 2.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 1rem 8rem 1rem 1rem;
+}
+
+.container-1 .logo img {
+  margin: 0 0 0 .3rem;
+}
+
+.container-1 .icons img {
+  background: #0c122c;
+  padding: .75rem;
+  height: 45px;
+  width: 45px;
+  border-radius: .5rem;
+  margin: 0 .3rem;
+}
+
+.container-2 {
+  height: 175px;
+  width: 600px;
+  position: relative;
+  top: 1rem;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.container-2 .total-storage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-2 .total-storage p {
+  color: #848794;
+}
+
+.container-2 .total-storage p span {
+  font-weight: 700;
+  color: #dddbff;
+}
+
+.container-2 .total-storage .progress-bar {
+  width: 100%;
+  height: 1.2rem;
+  background: #0c122c;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-2 .total-storage .progress-bar .progress {
+  height: 75%;
+  width: 81.5%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(90deg, #ffa399, #ff4d97);
+  border-radius: 1rem;
+  position: relative;
+  left: .2rem;
+}
+
+.container-2 .total-storage .progress-bar .progress .ball {
+  position: absolute;
+  top: .05rem;
+  right: .15rem;
+  height: .8rem;
+  width: .8rem;
+  border-radius: 50%;
+  background: #dddbff;
+}
+
+.container-2 .values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #dddbff;
+  font-weight: 700;
+}
+
+.container-2 .left-storage {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  bottom: 150px;
+  right: 30px;
+  border-radius: .5rem;
+}
+
+.container-2 .left-storage::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  border-top: 40px solid white;
+  border-left: 40px solid transparent;
+}
+
+.container-2 .left-storage p {
+  color: #0c122c;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+.container-2 .left-storage p span {
+  color: #848794;
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  body {
+    background: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-2 {
+    width: 375px;
+  }
+  .container-2 .left-storage {
+    bottom: -30px;
+    right: 90px;
+  }
+  .container-2 .left-storage::before {
+    border: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
